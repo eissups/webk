@@ -1,0 +1,23 @@
+form {
+    max-width: 25em;
+    display: flex;  
+    flex-wrap: wrap;
+    
+}
+
+label {
+     display: flex; 
+     margin-bottom: 2%;
+ } 
+
+
+span {
+    
+    width: 35%;
+
+}
+
+input {
+
+    width: 60%;
+}
