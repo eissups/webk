@@ -1,0 +1,84 @@
+
+@media (max-width: 640px) {
+
+    body {
+      overflow: scroll;
+      margin:0;
+    }
+
+    form {
+        min-width:  640px;
+    }
+}
+
+    
+
+
+form {
+
+    min-width: 640px;
+    width: 100%;
+}
+
+
+
+#sarja {
+
+
+    float: left;
+  
+    margin-top: 2%;
+}
+
+
+.radiot {
+    float: right;
+    margin-top: 2%;
+}
+
+label {
+   display: block;
+
+}
+
+.joukkue > label{
+
+    display: inline;
+    clear: both;
+}
+
+input {
+    float: right;
+    clear: both;
+}
+
+#nimi {
+    display: inline;
+    padding: 0%;
+    margin-top: 0%;
+}
+
+
+.jasenet {
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+.jasenet > label {
+    margin-bottom: 2%;
+}
+
+button {
+
+   background-color: lightgray;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+
+}
+
+strong {
+    margin: 1%;
+}
+
