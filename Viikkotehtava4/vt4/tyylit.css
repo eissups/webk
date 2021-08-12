@@ -1,0 +1,252 @@
+body {
+
+    overflow: hidden; /*  Disable scrollbars */
+    background-color: black;
+
+  }
+
+  
+  svg {
+     padding: 0;
+     margin: 0;
+     z-index: 2;
+     position: relative;
+     height: 100%;
+
+  }
+
+
+  rect { 
+      fill: url(#Gradient1);
+      position: absolute;
+      height: 100%;
+      top: 50%;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-name: move;
+      z-index: 2;
+      bottom: 0%;
+      left:-10vh;   
+  }
+
+
+  @keyframes move {
+    /* mistä animoidaan */
+     from {
+        transform: translate(40%,0);
+        fill: url(#Gradient1); 
+     }
+  
+    /* mihin animoidaan */
+     50% {
+        
+        transform: translate(170%,0); 
+           
+     }
+
+     100% {
+        fill: url(#Gradient2);
+     }
+
+     to {
+         transform: translate(40%, 0);
+              
+     }
+   }
+
+
+.stop1 {
+     stop-color: black; 
+}
+
+.stop2 { 
+    stop-color:turquoise; 
+}
+
+.stop3 { 
+    stop-color: black; 
+}
+
+.stop21 {
+    stop-color: black;
+}
+
+.stop22 {
+    stop-color: green;
+}
+
+.stop23 {
+    stop-color: black;
+}
+
+
+
+
+#penguin {
+    z-index: 1;
+    display: inline-table;
+    position: absolute;
+  
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: penguin;
+
+  }
+
+
+  #penguin2 {
+    z-index: 1;
+    display: inline-table;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: penguin2;
+}
+
+
+@keyframes penguin {
+    from {
+        transform: translate(0%, 0%);
+    }
+    50% {
+
+        transform: translateX(-50vw)  translateX(75px)
+        translateY(-100vh) translateY(+150px) ; 
+    }
+
+    to {
+        transform: translateX(-100vw) translateX(150px)
+        translateY(0vh) ; 
+    }
+}
+
+@keyframes penguin2 {
+    from {
+        transform: translate(0%, 0%);
+    }
+
+    50% {
+        transform: translateX(50vw)  translateX(-75px)
+        translateY(100vh)  translateY(-150px); 
+    }
+
+    to {
+        transform: translateX(100vw) translateX(-150px)
+        translateY(0vh) ; 
+    }
+}
+
+
+canvas {
+    display: inline-table;
+    position: absolute;
+    width: 282px;
+    height: 276px;
+    z-index: 4;
+}
+
+
+#canvas1 {
+    left: calc(50% + -282px);
+    top: calc(50% + -276px );
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: canvas1;
+  }
+
+  #canvas2 {
+    right: calc(50% + -282px);
+    top: calc(50% + -276px);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: canvas2;
+  }
+
+  #canvas3 {
+    left: calc(50% + -282px);
+    bottom: calc(50% + -276px);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: canvas3;  
+  }
+
+
+  #canvas4 {
+    right: calc(50% + -282px);
+    bottom:  calc(50% + -276px);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: canvas4;  
+  }
+
+  @keyframes canvas1{
+    from {
+        transform: translateX(0%)
+        translateX(0%);
+    }
+
+    to {
+
+        transform: translateX(-90vh)  translateX(282px)
+        translateY(-90vh)  translateY(552px); 
+    }
+
+  }
+
+  @keyframes canvas2{
+    from {
+
+        transform: translateX(0%)
+        translateX(0%);
+
+
+    }
+
+    to {
+
+        transform: translateX(90vh)  translateX(-282px)
+        translateY(-90vh)  translateY(552px); 
+    }
+  }
+
+
+  @keyframes canvas3{
+    from {
+        transform: translateX(0%)
+        translateX(0%);
+    }
+
+    to {
+
+        transform: translateX(-90vh)  translateX(282px)
+        translateY(90vh)  translateY(-552px); 
+    }
+  }
+
+
+  @keyframes canvas4{
+
+    from {
+        transform: translateX(0%)
+        translateX(0%);
+    }
+
+    to {
+        transform: translateX(90vh)  translateX(-282px)
+        translateY(90vh)  translateY(-552px); 
+    }
+  }
+
